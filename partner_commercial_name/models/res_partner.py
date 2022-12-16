@@ -10,6 +10,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     commercial_name = fields.Char(string='Commercial Name')
+    
 
     def name_get(self):
         rec = super(ResPartner, self).name_get()
